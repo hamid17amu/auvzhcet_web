@@ -1,0 +1,254 @@
+body {
+	overflow-x: hidden !important;
+	font-family: 'Raleway', sans-serif ;
+}
+
+a {
+	color:#000;
+	transition: 0.5s;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: #555;
+	transition: 0.5s;
+}
+
+::selection {
+	background-color: #999;
+	color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.btn-custom {
+	color:#fff;
+	background-color: #1a1a1a;
+	border:2px solid #fff;
+	width: auto;
+	border-radius: 20px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.btn-custom:hover {
+	color:#1a1a1a;
+	border:2px solid #1a1a1a;
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+.btn-custom:focus {
+	color:#1a1a1a;
+	border:2px solid #1a1a1a;
+	background-color: #fff;
+	outline-width: 0;
+	transition: 0.5s;
+}
+
+.img-centered {
+	margin:0 auto;
+}
+
+/*Customised ScrollBar*/
+.scrollBar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 0;
+	background-color: #1a1a1a;;
+}
+
+.scrollBar::-webkit-scrollbar
+{
+  background-color: #fff;
+  width:5px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb
+{
+	border-radius:25px;
+	background-color: #999;
+}
+
+.shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-custom {
+	background-color: #5ddef4;
+	border: 0;
+	width: 97.5%;
+	margin: 1.25%;
+	border-radius: 0px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-brand b {
+	color: #1a1a1a;
+}
+
+.navbar-brand b:hover {
+	color: #555;
+}
+
+.navbar-custom li a {
+	color: #1a1a1a !important;
+	text-transform: uppercase;
+	font-weight:700;
+	transition: 0.5s;
+}
+
+.navbar-custom li a:hover {
+	color: #999 !important;
+	transition: 0.5s;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand > img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+
+.navbar-alignit .navbar-header {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+
+.center-line {
+	border-bottom: 4px solid #5ddef4;
+	max-width: 75%;
+	margin:0 auto;
+}
+
+.small-center-line {
+	border-bottom: 4px solid #5ddef4;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+#background {
+  background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+  padding: 1.25%;
+}
+
+#sec-background {
+  background-color: #F5F5F5;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.50), 0 6px 6px rgba(0,0,0,0.75);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2.5%;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+}
+
+#one {
+	color:#1a1a1a;
+}
+
+#one-text {
+	padding-top: 15%;
+	text-align: center;
+}
+
+#one-text h1 {
+	font-size: 4em;
+	text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#footer_form input {
+	color:#1a1a1a;
+	border: 0;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 40px;
+	box-shadow: 0;
+	outline-width: 0;
+}
+
+#footer_form textarea {
+	color:#1a1a1a;
+	border: 0;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 75px;
+	box-shadow: 0;
+	outline-width: 0;
+	transition: 0.5s;
+}
+
+#footer_form input:focus {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	outline-width: 0;
+	transition: 0.5s;
+}
+
+#footer_form textarea:focus {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	outline-width: 0;
+	transition: 0.5s;
+}
+
+.box {
+	color:#fff;
+	height: 250px;
+	padding: 25px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.85);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#success_message, #error_message {
+	display: none;
+}
+
+footer {
+  background-color:#4CAF50;
+  color:#fff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: -2.5%;
+}
+
