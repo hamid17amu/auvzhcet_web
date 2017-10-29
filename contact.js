@@ -3,17 +3,19 @@ $(document).ready(function(){
   $('#footer_form').submit(function(e) {
     e.preventDefault();
     var name = $("input[name=name]").val();
-    var email = $("input[name=email]").val();
     var phone = $("input[name=number]").val();
-    var message = $("input[name=message]").val();
+    var email = $("input[name=email]").val();
+    var message = $("textarea[name=message]").val();
+
+    console.log(message);
 
     $.ajax({
         url: "contact.php",
         type: "POST",
         data: {
             name: name,
-            email: email,
             phone: phone,
+            email: email,
             message: message
         },
         cache: false,
