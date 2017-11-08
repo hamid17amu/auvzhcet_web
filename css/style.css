@@ -2,7 +2,9 @@ body {
 	overflow-x: hidden !important;
 	font-family: 'Raleway', sans-serif ;
 }
-
+p{
+	margin: 10px;
+}
 a {
 	color:#000;
 	transition: 0.5s;
