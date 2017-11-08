@@ -91,9 +91,31 @@
                             <li>Zakir Hussain College of Engineering and Technology</li>
                             <li>Aligarh Muslim University, Aligarh</li>
                             <li>Uttar Pradesh-202002, India</li>
+                            <br>
+                            <li>Management Lead: Rajat Sharma +91 90450 63915</li>
+                            <li>Mechanical Lead: Atul Chaudhary +91 96753 13998</li>
+                            <li>Computer Lead: Syed Jawad Akhtar +91 87553 41105</li>
                         </ul>
                     </div>
+                    <div class="container row" id="googleMap" style="width: 100%; height: 500px;"></div>
+                    <br><br><br>
 
+                    <script>
+                        function myMap() {
+                        var uluru = {lat: 27.914914, lng: 78.076599};
+                        var map = new google.maps.Map(document.getElementById('googleMap'), {
+                            zoom: 17,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACCUctwn5eTmzw4mNaoRWEhaa7p0NvUjo&callback=myMap"></script>
                 </div>
             </section>
 
