@@ -56,10 +56,10 @@
                       <li><a href="management.html">Management</a></li>
                     </ul>
                     <li><a href="sponsors.html">Our sponsors</a></li>
-                    <li><a href="progress.html">Progress</a></li>
 
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
+                    <li><a href="progress.html">Progress</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="our-team.html">Our Team</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -83,6 +83,7 @@
                     </div>
 
                     <br><br><br><br><br><br>
+                    <canvas id="myChart"></canvas>
 
                 </div>
             </section>
@@ -136,6 +137,29 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript">
+        var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "My First dataset",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+    </script>
+
 
 </body>
 
