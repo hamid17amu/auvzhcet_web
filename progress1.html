@@ -21,7 +21,7 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body style="overflow-x: hidden;">
+<body style="overflow-x: visible;">
 
     <div id="background">
         <div id="sec-background" class="scrollBar">
@@ -81,13 +81,17 @@
                             </div>
                         </div>
                     </div>
-
                     <br><br>
-                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 
+                    <br> <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                    <br>
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                 </div>
+
+
             </section>
             <br><br>
+
             <footer>
                 <div class="container">
                     <div class="row">
@@ -137,13 +141,14 @@
     <script>
         AOS.init();
     </script>
-    <script type="text/javascript">
-window.onload = function () {
 
-	var chart = new CanvasJS.Chart("chartContainer",
+<script type="text/javascript">
+  window.onload = function () {
+
+	var chart = new CanvasJS.Chart("chartContainer2",
 	{
 		title:{
-			text: "Funds required for the SAUVC 2018"
+			text: "Manufacturing of Vehicle"
 		},
 		legend: {
 			maxWidth: 350,
@@ -155,22 +160,50 @@ window.onload = function () {
 			showInLegend: false,
 			legendText: "{indexLabel}",
 			dataPoints: [
-				{ y: 132000, indexLabel: "Travel" },
-				{ y: 22000, indexLabel: "Visa" },
-				{ y: 60000, indexLabel: "Accommodation" },
-				{ y: 150000, indexLabel: "DHL Cargo Shipping"},
-				{ y: 60000, indexLabel: "Food" },
-				{ y: 30000, indexLabel: "Taxi in Singapore"},
+				{ y: 60000, indexLabel: "Mechanical" },
+				{ y: 31000, indexLabel: "Computer" },
+				{ y: 77000, indexLabel: "Thrustors" },
+				{ y: 40000, indexLabel: "Hydrophone"},
+				{ y: 55000, indexLabel: "Electronics" },
+				{ y: 15000, indexLabel: "Others"},
 				]
 		}
 		]
 	});
 	chart.render();
+  var chart = new CanvasJS.Chart("chartContainer",
+  {
+    title:{
+      text: "Funds Required for SAUVC 2018"
+    },
+    legend: {
+      maxWidth: 350,
+      itemWidth: 240
+    },
+    data: [
+    {
+      type: "pie",
+      showInLegend: false,
+      legendText: "{indexLabel}",
+      dataPoints: [
+        { y: 132000, indexLabel: "Travel" },
+        { y: 22000, indexLabel: "Visa" },
+        { y: 60000, indexLabel: "Accommodation" },
+        { y: 150000, indexLabel: "DHL Cargo Shipping"},
+        { y: 60000, indexLabel: "Food" },
+        { y: 30000, indexLabel: "Taxi in Singapore"},
+        ]
+    }
+    ]
+  });
+  chart.render();
 }
 </script>
+
 <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<!--
 
-
+-->
 </body>
 
 </html>
