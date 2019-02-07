@@ -1171,7 +1171,8 @@ header {
 }
 
 .blog .blog-content p {
-    height: 70px;
+    padding-top: 30px;
+    height: auto;
     word-wrap: break-word;
     white-space: pre-line;
     overflow: hidden;
