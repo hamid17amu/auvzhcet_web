@@ -3,9 +3,9 @@
 
 	///////////////////////////
 	// Preloader
-	$(window).on('load', function() {
-		$("#preloader").delay(50).fadeOut();
-	});
+	/*$(window).on('load', function() {
+		$("#preloader").delay(60).fadeOut();
+	});*/
 
 	///////////////////////////
 	// Scrollspy
@@ -193,3 +193,4 @@
 
 $('#credits a').attr("href","https://www.linkedin.com/in/jawwad-ayyubi-/")
 $('#credits a').text("Developed by: Jawwad A. Ayyubi");
+

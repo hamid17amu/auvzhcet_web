@@ -125,8 +125,8 @@ ul, ol {
 }
 
 .md-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .sm-padding {
@@ -377,7 +377,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         position: absolute;
         right: -50%;
         top: 0;
-        background-color: #6195FF;
+        background-color: rgb(255, 255, 255);
         width: 200px;
         -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
@@ -398,7 +398,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .dropdown li a {
         display: block;
-        color: #FFF;
+        color: rgb(20, 20, 20);
         border-top: 1px solid rgba(250, 250, 250, 0.1);
         padding: 10px 0px;
     }
@@ -1171,7 +1171,7 @@ header {
 }
 
 .blog .blog-content p {
-    padding-top: 30px;
+    padding-top: 10px;
     height: auto;
     word-wrap: break-word;
     white-space: pre-line;
@@ -1448,6 +1448,7 @@ header {
 .widget-post img {
     display: block;
     float: left;
+    width: 100px;
     margin-right: 10px;
     margin-top: 5px;
 }
