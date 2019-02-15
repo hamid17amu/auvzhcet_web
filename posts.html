@@ -39,6 +39,10 @@
 
 <body>
 
+	<!--Redirect news-->
+	<a href="#" id="demo" style="display: none"></a>
+	<!--/Redirect news-->
+
 	<!-- Header -->
 	<header>
 
@@ -50,7 +54,7 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="index.html">
-							<img class="logo" src="img/logo.png" alt="logo">
+							<img class="logo" src="img/auv1.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -102,15 +106,38 @@
 				<!-- Main -->
 				<main id="main" class="col-md-9">
 					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/post1.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-clock-o"></i>29 Jan, 2019</li>
-							</ul>
-							<h3>AUV ZHCET starts recruiting</h3>
-							<p>Address: AUV-Club, near CFD Lab, Main Building, ZHCET<br>Contact us : seazhcet@gmail.com<br>last date for Registration : 03/02/2019<br>You will be further notified for the interview date</p>
+						<div id="tabsToShow" class="tab-content">
+							
+							<!--Post 2-->
+							<div id="post2" class="tab-pane fade in active">
+								<div class="blog-img">
+									<img class="img-responsive" src="./img/post2.jpg" alt="">
+								</div>
+								<div class="blog-content">
+									<ul class="blog-meta">
+										<li><i class="fa fa-clock-o"></i>16 Feb, 2019</li>
+									</ul>
+									<h3>Apply for internship at our AUV-club</h3>
+									<p>Explore the Ocean by joining our club.<br/><a href="https://goo.gl/BsCXTN" target="blank">CLICK HERE!</a> to apply for the internship. </p>
+								</div>
+							</div>
+							<!--/Post 2-->
+
+							<!--Post 1-->
+							<div id="post1" class="tab-pane fade in">
+								<div class="blog-img">
+									<img class="img-responsive" src="./img/post1.jpg" alt="">
+								</div>
+								<div class="blog-content">
+									<ul class="blog-meta">
+										<li><i class="fa fa-clock-o"></i>29 Jan, 2019</li>
+									</ul>
+									<h3>AUV ZHCET starts recruiting</h3>
+									<p>Address: AUV-Club, near CFD Lab, Main Building, ZHCET<br>Contact us : seazhcet@gmail.com<br>last date for Registration : 03/02/2019<br>You will be further notified for the interview date</p>
+								</div>
+							</div>
+							<!--/Post 1-->
+
 						</div>
 
 						<!-- reply form -->
@@ -132,35 +159,24 @@
 				<!-- Aside -->
 				<aside id="aside" class="col-md-3">
 
-					<!-- Search -->
-					<div class="widget">
-						<div class="widget-search">
-							<abbr title="Will be active soon"><input class="search-input" type="text" placeholder="search" disabled="true"></abbr>
-							<button class="search-btn" type="button"><i class="fa fa-search"></i></button>
-						</div>
-					</div>
-					<!-- /Search -->
-
-					<!-- Category 
-					<div class="widget">
-						<h3 class="title">Category</h3>
-						<div class="widget-category">
-							<a href="#">Web Design<span>(7)</span></a>
-							<a href="#">Marketing<span>(142)</span></a>
-							<a href="#">Web Development<span>(74)</span></a>
-							<a href="#">Branding<span>(60)</span></a>
-							<a href="#">Photography<span>(5)</span></a>
-						</div>
-					</div>
-					<! /Category -->
-
 					<!-- Posts sidebar -->
 					<div class="widget">
-						<h3 class="title">Popular Posts</h3>
+					<h3 class="title">Popular Posts</h3>
 
 						<!-- single post -->
 						<div class="widget-post">
-							<a href="#">
+							<a href="#post2">
+								<img src="./img/post2.jpg" alt="">Apply for internship at our AUV-club
+							</a>
+							<ul class="blog-meta">
+								<li>Feb 16, 2019</li>
+							</ul>
+						</div>
+						<!--/single post -->	
+
+						<!-- single post -->
+						<div class="widget-post">
+							<a href="#post1">
 								<img src="./img/post1.jpg" alt=""> AUV ZHCET starts recruiting
 							</a>
 							<ul class="blog-meta">
@@ -169,19 +185,7 @@
 						</div>
 						<!-- /single post -->
 
-						<!-- single post ->
-						<div class="widget-post">
-							<a href="#">
-								<img src="./img/post2.jpg" alt=""> Blog title goes here
-							</a>
-							<ul class="blog-meta">
-								<li>Oct 18, 2017</li>
-							</ul>
-						</div>
-						<!-/single post >
-
-
-						< single post >
+						<!-- single post >
 						<div class="widget-post">
 							<a href="#">
 								<img src="./img/post3.jpg" alt=""> Blog title goes here
@@ -275,6 +279,7 @@
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/post.js"></script>
 
 </body>
 

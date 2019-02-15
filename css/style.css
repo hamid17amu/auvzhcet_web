@@ -1449,6 +1449,7 @@ header {
     display: block;
     float: left;
     width: 100px;
+    height: 70px;
     margin-right: 10px;
     margin-top: 5px;
 }

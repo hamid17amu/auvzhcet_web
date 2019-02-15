@@ -511,7 +511,7 @@
 				<!-- /Section header -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<a data-toggle="modal" href="#mod2"><div class="service" data-target="#mod2">
 						<i class="fa fa-rocket"></i>
 						<h3>NIOT CDR Selection</h3>
@@ -521,7 +521,7 @@
 				<!-- /service -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<a data-toggle="modal" href="#mod3"><div class="service" data-target="#mod3">
 						<i class="fa fa-rocket"></i>
 						<h3>Singapore AUV Challenge</h3>
@@ -531,11 +531,21 @@
 				<!-- /service -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<a data-toggle="modal" href="#mod1"><div class="service">
 						<i class="fa fa-rocket"></i>
 						<h3>Hult Prize</h3>
 						<p>Organized the national Hult Prize orientation ceremony at the college. </p>
+					</div></a>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-3 col-sm-6">
+					<a data-toggle="modal" href="#mod4"><div class="service">
+						<i class="fa fa-rocket"></i>
+						<h3>SAVe 2019 Chennai</h3>
+						<p>The team stood in the top 5 finalist in SAVe Chennai 2019. </p>
 					</div></a>
 				</div>
 				<!-- /service -->
@@ -585,22 +595,43 @@
 
 				<div class="modal" id="mod3">
 					<div class="modal-dialog">
-					<div class="modal-content">
-					
-						<!-- Modal Header -->
-						<div class="modal-header"  style="background-color: #6d0404">
-						<h3 class="modal-title">Singapore AUV</h3>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						</div>
+						<div class="modal-content">
 						
-						<!-- Modal body -->
-						<div class="modal-body">
-							<div id="about-slider-sing" class="owl-carousel owl-theme">
-								<img class="img-responsive" src="./img/singauv1.jpeg">
-								<img class="img-responsive" src="./img/singauv2.jpeg">
-								<img class="img-responsive" src="./img/singauv3.jpeg">
+							<!-- Modal Header -->
+							<div class="modal-header"  style="background-color: #6d0404">
+							<h3 class="modal-title">Singapore AUV</h3>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
-						</div>								
+							
+							<!-- Modal body -->
+							<div class="modal-body">
+								<div id="about-slider-sing" class="owl-carousel owl-theme">
+									<img class="img-responsive" src="./img/singauv1.jpeg">
+									<img class="img-responsive" src="./img/singauv2.jpeg">
+									<img class="img-responsive" src="./img/singauv3.jpeg">
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>
+
+				<div class="modal" id="mod4">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						
+							<!-- Modal Header -->
+							<div class="modal-header"  style="background-color: #6d0404">
+							<h3 class="modal-title">SAVe Chennai</h3>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							
+							<!-- Modal body -->
+							<div class="modal-body">
+								<div id="about-slider-save" class="owl-carousel owl-theme">
+									<img class="img-responsive" src="./img/save1.jpg">
+									<img class="img-responsive" src="./img/save2.jpg">
+								</div>
+							</div>								
 						</div>
 					</div>
 				</div>
@@ -628,32 +659,84 @@
 				<!-- Sponsors content -->
 				<div class="col-md-6">
 					<p>The AUV ZHCET club has been working in the Autonomous technology for underwater vehicles for the past three years, the tech world has known about Autonomous Robots for quite some time now, but its implementation in an Underwater environment is relatively new. However with an active international community, this technology holds more potential than anything else to explore the world's oceans. A sponsorship with our club would allow you to gain exposure to this community and tap into the potentials of the tech it is developing. We will serve as an advertiser for you or your organisation to this international community as well as locally.</p>
-					<!--<div class="feature">
-						<i class="fa fa-caret-right"></i>
-						<p>Quis varius quam quisque id diam vel quam elementum.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-caret-right"></i>
-						<p>Mauris augue neque gravida in fermentum.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-caret-right"></i>
-						<p>Orci phasellus egestas tellus rutrum.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-caret-right"></i>
-						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
-					</div>-->
 					<div class="row spon">
-						<div class="col-md-6"><div class="features"><img src="./img/amu-logo.png"/></div>Aluminis</div>
-						<div class="col-md-6"><div class="features"><img src="./img/gold.png"/></div>Gold Sponsors</div>
+						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#gold-sponsor"><div class="features"><img src="./img/gold.png"/></div>Gold Sponsors</a></div>
+						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#silver-sponsor"><div class="features"><img src="./img/silver.png"/></div>Silver Sponsors</a></div>
 					</div>
 					<div class="row spon">
-							<div class="col-md-6"><div class="features"><img src="./img/silver.png"/></div>Silver Sponsors</div>
-							<div class="col-md-6"><div class="features"><img src="./img/bronze.png"/></div>Bronze Sponsors</div>
+						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#aluminis"><div class="features"><img src="./img/amu-logo.png"/></div>Aluminis</a></div>
 					</div>
 				</div>
-				<!-- /why choose us content -->
+				<!-- /Sponsors content -->
+
+				<div class="modal" id="aluminis">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					
+						<!-- Modal Header -->
+						<div class="modal-header"  style="background-color: #6d0404">
+						<h3 class="modal-title">Aluminis</h3>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+								<div class="row">
+									<h1 style="text-align: center">RIYADH AMUOBA</h1>
+								</div>
+								<div class="row">
+									<h1 style="text-align: center">QATAR AMUOBA</h1>
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>
+
+				<div class="modal" id="gold-sponsor">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					
+						<!-- Modal Header -->
+						<div class="modal-header"  style="background-color: #6d0404">
+						<h3 class="modal-title">Gold Sponsors</h3>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						
+						<!-- Modal body -->
+						<div class="modal-body">	
+								<div class="row">
+									<center><img class="img-responsive" src="./img/amu-logo.png" style="width: 150px"></center>
+								</div>
+								<div class="row">
+									<center><img class="img-responsive" src="./img/opensilicon.jpeg" style="width: 150px"></center>
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>
+
+				<div class="modal" id="silver-sponsor">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					
+						<!-- Modal Header -->
+						<div class="modal-header"  style="background-color: #6d0404">
+						<h3 class="modal-title">Silver Sponsors</h3>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+								<div class="row">
+									<img class="img-responsive" src="./img/bluerobotics.png">
+								</div>
+								<div class="row">
+									<img class="img-responsive" src="./img/nationalinstruments.png">
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>
 
 				<!-- About slider -->
 				<div class="col-md-6">
