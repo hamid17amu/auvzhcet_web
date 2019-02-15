@@ -7,6 +7,6 @@ $(document).ready(function(){
 	$("#demo").tab('show');
 });
 $(".widget a").click(function(){
-	$("#tabsToShow").scrollIntoView({ behavior: 'smooth'});
+	document.getElementById("tabShow").scrollIntoView();
 	$(this).tab('show');
 });
