@@ -201,4 +201,6 @@
 
 })(jQuery);
 
+$('#credits a').attr("href","https://www.linkedin.com/in/jawwad-ayyubi-/")
+$('#credits a').text("Developed by: Jawwad A. Ayyubi");
 
