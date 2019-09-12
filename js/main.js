@@ -7,6 +7,18 @@
 		$("#preloader").delay(60).fadeOut();
 	});*/
 
+
+	$(document).ready(function(){
+			setTimeout(function(){
+			$('.popup').css('display','block'); },5000);
+		});
+
+	  //rotate lobo of AUVZHCET
+		$(window).scroll(function() {
+	    var theta = $(window).scrollTop() / 200 % Math.PI;
+	    $('#rotate_image').css({ transform: 'rotate(' + theta + 'rad)' });
+	    });
+
 	///////////////////////////
 	// Scrollspy
 	$('body').scrollspy({
@@ -200,5 +212,3 @@
 	});
 
 })(jQuery);
-
-

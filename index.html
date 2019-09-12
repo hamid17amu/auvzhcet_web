@@ -35,7 +35,7 @@
 	<![endif]-->
 </head>
 
-<body>
+<body id="ahmad">
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
@@ -52,7 +52,7 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="index.html">
-							<img src="img/auv1.png" alt="Logo">
+							<img src="img/auv1.png" alt="lobo" id="rotate_image">
 							<!--<img src="img/logo-alt.png" alt="Logo">	-->
 						</a>
 					</div>
@@ -82,6 +82,27 @@
 			</div>
 		</nav>
 		<!-- /Nav -->
+
+		<div class="popup">
+			  <div class="popup-content">
+					<img src="./img/cancel.png" alt="close" class="close">
+					<h3 align="center">Our Sponsors</h3>
+				 <div class="row spon">
+						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#gold-sponsor"><div class="features"><img src="./img/gold.png"/></div>Gold Sponsors</a></div>
+						<div class="col-md-6" style="text-decoration: none" pop_up_image><a data-toggle="modal" href="#silver-sponsor"><div class="features"><img src="./img/silver.png"/></div>Silver Sponsors</a></div>
+          </div>
+					<div class="row spon">
+						<div class="col-md-6" style="text-decoration: none" pop_up_image><a data-toggle="modal" href="#aluminis"><div class="features"><img src="./img/amu-logo.png"/></div>Alumnus</a></div>
+						<div class="col-md-6" style="text-decoration: none" pop_up_image><a data-toggle="modal" href="#software"><div class="features"><img src="./img/bronze.png"/></div>Software Sponsors</a></div>
+					</div>
+				</div>
+	  </div>
+
+		<script>
+		    document.querySelector(".close").addEventListener("click",function(){
+					document.querySelector(".popup").style.display="none";
+				})
+		</script>
 
 		<!-- home wrapper -->
 		<div class="home-wrapper">
@@ -697,7 +718,7 @@
 				</div>
 				<!-- Sponsors content -->
 				<div class="col-md-6">
-					<p>The AUV ZHCET club has been working in the Autonomous technology for underwater vehicles for the past three years, the tech world has known about Autonomous Robots for quite some time now, but its implementation in an Underwater environment is relatively new. However with an active international community, this technology holds more potential than anything else to explore the world's oceans. A sponsorship with our club would allow you to gain exposure to this community and tap into the potentials of the tech it is developing. We will serve as an advertiser for you or your organisation to this international community as well as locally.</p>
+					<p>The AUV ZHCET club has been working in the Autonomous technology for underwater vehicles for the past nine years, the tech world has known about Autonomous Robots for quite some time now, but its implementation in an Underwater environment is relatively new. However with an active international community, this technology holds more potential than anything else to explore the world's oceans. A sponsorship with our club would allow you to gain exposure to this community and tap into the potentials of the tech it is developing. We will serve as an advertiser for you or your organisation to this international community as well as locally.</p>
 					<div class="row spon">
 						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#gold-sponsor"><div class="features"><img src="./img/gold.png"/></div>Gold Sponsors</a></div>
 						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#silver-sponsor"><div class="features"><img src="./img/silver.png"/></div>Silver Sponsors</a></div>
@@ -882,10 +903,10 @@
 					<div class="col-md-12">
 						<div class="number">
 
-															<a href='https://www.symptoma.it/'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=b277c3b237ab60ba8fd9d6aea297ecdced3b8c16'></script>
+															<a href='https://www.symptoma.it/'>Page visits</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=b277c3b237ab60ba8fd9d6aea297ecdced3b8c16'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/543983/t/3"></script>
 							<br/><br>
-							<span class="white-text">Page visits</span>
+							<!--<span class="white-text">Page visits</span>  -->
 						</div>
 					</div>
 				</div>

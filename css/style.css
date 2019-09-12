@@ -1862,3 +1862,37 @@ header {
     text-decoration: none;
     color: #6195FF;
 }
+.popup{
+  position:fixed;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  /*background: rgba(76, 175, 80, 0.3)*/
+  width:100%;
+  height: 100%;
+  display:none;
+  /*justify-content: center;
+  align-items: center;*/
+  z-index:1001;
+}
+.popup-content{
+    /*  height: 45%;
+      width: 30%;*/
+      background: #fff;
+      background-size:cover;
+      padding:20px;
+      border-radius: 5px;
+      position:absolute;
+      bottom:0;
+      right:0;
+      /*transform:translate(-50%,-50%);*/
+
+}
+.close{
+  height:15px;
+  width:15px;
+  position: absolute;
+  top:-13px;
+  left:-13px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+}
