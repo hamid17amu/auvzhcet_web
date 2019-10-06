@@ -1896,3 +1896,7 @@ header {
   border-radius: 50%;
   box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
 }
+.content_gap{
+  padding-left:15px;
+  padding-right: 15px;
+}
