@@ -45,12 +45,31 @@ Table OF Contents
 /* -- typo graphy -- */
 
 body {
-    font-family: 'Varela Round', sans-serif;
+    /*font-family: 'Varela Round', sans-serif;*/
+    font-family: 'ABeeZee';
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
-    color: #868F9B;
+    /*color: #868F9B;*/
 }
+.navbar-head{
+  color: yellow;
+}
+.head-title{
+  padding-top: 15px;
+  padding-left:200px;
+  padding-bottom: 0px;
+}
+.slide-image{
+
+}
+.nav-head {
+  background-color: green;
+}
+.nav-head,.white-btn,.main-btn{
+            font-family: 'Varela Round', sans-serif;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -152,10 +171,10 @@ ul, ol {
 
 .bg-img {
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
     z-index: -1;
     background-position: center;
     background-size: cover;
@@ -635,7 +654,8 @@ header {
 .about-des{
 	text-align: justify;
 	font-size: 18px;
-	font-family: inherit;
+	/*font-family: inherit;*/
+  /*font-weight:1000;*/
 }
 
 .about i{
