@@ -10,7 +10,7 @@
 
 	$(document).ready(function(){
 			setTimeout(function(){
-			$('.popup').css('display','block'); },1000);
+			$('.popup').css('display','block'); },5000);
 		});
 
 	  //rotate lobo of AUVZHCET
