@@ -40,7 +40,7 @@
 
 <body>
 	<!-- Header -->
-	<header id="home">
+	<header>
 		<!-- Background Image -->
 		<!--<div class="bg-img" style="background-image: url('./img/background.png');">  -->
 
@@ -90,12 +90,14 @@
 		</nav>
 		<!-- /Nav -->
 
-   <div class="head-title">
-		 <h2>WELCOME TO AUV ZHCET</h2>
-	 </div>
+   <!-- <div class="head-title">
+		 <h2 class="home-title"><span>WELCOME TO AUV ZHCET</span></h2>
+	 </div> -->
 
 		<div class="container">
-			<div class="jumbotron">
+			<div class="head-title">
+	 		 <h1 class="home-title"><span>WELCOME TO AUV ZHCET</span></h1>
+	 	 </div>
 			<!--	<div data-packed="true" style="width: 966px; pointer-events: none; visibility: inherit;" class="txtNew" id="comp-iugzzlih">
 			                                                        <h2 class="font_2" style="font-size:40px; text-align:center;"><span style="color:#004BA3;"><span style="font-size:40px;"><span style="font-family:wfont_716c97_8f4bc230f6df4a16bca99add52c8f1ed,wf_8f4bc230f6df4a16bca99add5,orig_bankgothic_bold;">Welcome to AUV ZHCET</span></span></span></h2></div>
 			                                                    <div data-shouldhideoverflowcontent="true" style="top:;bottom:;left:;right:;width:981px;height:440px;position:" class="style-j7k9002z" id="comp-ivmp0b30">  -->
@@ -127,13 +129,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 
 
 		<div class="popup">
 			  <div class="popup-content">
-					<img src="./img/cancel.png" alt="close" class="close">
 					<h3 align="center">Our Sponsors</h3>
 				 <div class="row spon">
 						<div class="col-md-6" style="text-decoration: none"><a data-toggle="modal" href="#gold-sponsor"><div class="features"><img src="./img/gold.png"/></div>Gold Sponsors</a></div>
@@ -146,10 +146,22 @@
 				</div>
 	  </div>
 
-		<script>
+		<!-- <script>
 		    document.querySelector(".close").addEventListener("click",function(){
 					document.querySelector(".popup").style.display="none";
 				})
+		</script> -->
+		<script>
+		var sponsor_popup=document.querySelector('.popup');
+		window.onclick=function(event){
+			if(event.target==sponsor_popup){
+				sponsor_popup.style.display="none";
+			}
+			// document.querySelector(".popup").style.display="none";
+		}
+		    // document.querySelector(".close").addEventListener("click",function(){
+				// 	document.querySelector(".popup").style.display="none";
+				// })
 		</script>
 
 		<!-- home wrapper -->

@@ -8,10 +8,10 @@
 	});*/
 
 
-	/*$(document).ready(function(){
+	$(document).ready(function(){
 			setTimeout(function(){
-			$('.popup').css('display','block'); },5000);
-		});*/
+			$('.popup').css('display','block'); },1000);
+		});
 
 	  //rotate lobo of AUVZHCET
 		$(window).scroll(function() {
