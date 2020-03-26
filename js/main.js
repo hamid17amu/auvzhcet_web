@@ -17,7 +17,50 @@
 		$(window).scroll(function() {
 	    var theta = $(window).scrollTop() / 200 % Math.PI;
 	    $('#rotate_image').css({ transform: 'rotate(' + theta + 'rad)' });
-	    });
+		});
+		
+
+
+
+
+
+		    /*------------------------------------------------------
+    Javascript Function for initialize owl carousel
+    --------------------------------------------------------*/
+
+    if (!!$.prototype.owlCarousel) {
+
+        $(".home-3 .home-carousel").owlCarousel({
+            nav: true,
+            navText: [
+                "<div class='home-slider-btn effect ver-center'><i class='fa fa-chevron-left center'></i><span></span></div>",
+                "<div class='home-slider-btn effect ver-center'><i class='fa fa-chevron-right center'></i><span></span></div>"
+            ],
+            dots: true,
+            loop: true,
+            items: 1,
+        });
+
+        $(".testimonial-slider").owlCarousel({
+            loop: true,
+            nav: true,
+            navText: [
+                "<div class='testimonial-slider-btn effect hor-center'><i class='fa fa-angle-left center'></i></div>",
+                "<div class='testimonial-slider-btn effect hor-center'><i class='fa fa-angle-right center'></i></div>"
+            ],
+            margin: 20,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                780: {
+                    items: 2,
+                },
+            }
+        });
+
+    }
+
 
 	///////////////////////////
 	// Scrollspy
