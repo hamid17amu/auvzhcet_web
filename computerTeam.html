@@ -28,13 +28,6 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 	<style>
 	.our-team{
     text-align: center;
@@ -43,7 +36,8 @@
     position: relative;
 }
 .our-team .pic{
-    border-radius: 50%;
+	/* border-radius: 50%; */
+	margin-top: 10px;
     overflow: hidden;
     position: relative;
 }
@@ -51,7 +45,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background: rgba(0,0,0,0.7);
     opacity: 0;
     position: absolute;
@@ -100,13 +94,13 @@
 .our-team .team-content{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    border: 2px dotted #ddd;
+    /* border-radius: 50%; */
+    /* border: 2px dotted #ddd; */
     position: absolute;
     bottom: -100px;
     left: 0;
     z-index: -1;
-    transition: all 0.5s ease 0s;
+    /* transition: all 0.5s ease 0s; */
 }
 .our-team:hover .team-content{ border: 2px dotted #00adae; }
 .our-team .team-info{
@@ -253,81 +247,7 @@
 
 		<div class="jumbotron">
     <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/omama.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-											<li><a href="#" class="fa fa-twitter"></a></li>-->
-											<li><a href="mailto:mohd.omama@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/mohdomama/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Mohd Omama</h3>
-                        <span class="post">Team Head</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/jawad-akhter.JPG">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="mailto:syedjawadakhtar@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/syed-jawad-akhtar/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Syed Jawad Akhtar</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/rahul.jpg">
-                    <ul class="social">
-											<li><a href="mailto:rahul772j@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/rj722/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Rahul Jha</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/sakina.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
-											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="mailto:raosakina4@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/sakina-rao-2aa68215a/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Sakina Rao</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6">
             <div class="our-team">
                 <div class="pic">
                     <img src="./img/hozaifa.jpg">
@@ -346,7 +266,7 @@
                 </div>
             </div>
         </div>
-				<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6">
             <div class="our-team">
                 <div class="pic">
                     <img src="./img/prateek-jain.jpg">
@@ -365,7 +285,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6">
             <div class="our-team">
                 <div class="pic">
                     <img src="./img/prajjwal-nijhara.jpg">
@@ -384,28 +304,63 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6">
             <div class="our-team">
                 <div class="pic">
-                    <img src="./img/roshan-sharma.jpg">
+                    <img src="./img/saloni-gupta.jpg">
                     <ul class="social">
-                        <!-- <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li> -->
-                        <li><a href="mailto:roshan@programmer.net?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-                        <li><a href="https://www.linkedin.com/in/roshan-sharma-a399a4181/" class="fa fa-linkedin"></a></li>
+											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+											<li><a href="#" class="fa fa-twitter"></a></li> -->
+											<li><a href="mailto:saloniguptasg12@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
+											<li><a href="https://www.linkedin.com/in/pingsaloni/" class="fa fa-linkedin"></a></li>
                     </ul>
                 </div>
                 <div class="team-content">
                     <div class="team-info">
-                        <h3 class="title">Roshan Sharma</h3>
+                        <h3 class="title">Saloni Gupta</h3>
                         <span class="post">Team Member</span>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
+		<div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="./img/yash-agarwal.jpg">
+                    <ul class="social">
+											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+											<li><a href="#" class="fa fa-twitter"></a></li> -->
+											<li><a href="mailto:yash.agarwal1214@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
+											<li><a href="https://www.linkedin.com/in/yash-agarwal-5a2975192/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <div class="team-info">
+                        <h3 class="title">Yash Agarwal</h3>
+                        <span class="post">Team Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+				<div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="./img/pranshi-jindal.jpeg">
+                    <ul class="social">
+                        <!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li> -->
+                        <li><a href="mailto:apranshi11@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
+                        <li><a href="https://www.linkedin.com/in/pranshi112" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <div class="team-info">
+                        <h3 class="title">Pranshi Jindal</h3>
+                        <span class="post">Team Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 	</div>
 </div>
