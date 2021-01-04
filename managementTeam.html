@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<link rel="shortcut icon" href="img/logo.jpg" type="image/png"/>
+	<link rel="shortcut icon" href="img/logo.jpg" type="image/png" />
 	<title>Management Team</title>
 
 	<!-- Google font -->
@@ -36,99 +36,136 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<style>
-	.our-team{
-    text-align: center;
-    margin-bottom: 100px;
-    z-index: 1;
-    position: relative;
-}
-.our-team .pic{
-    /* border-radius: 50%; */
-    overflow: hidden;
-    position: relative;
-}
-.our-team .pic:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    /* border-radius: 50%; */
-    background: rgba(0,0,0,0.7); 
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* transition: all 0.5s ease 0s; */
-}
-.our-team:hover .pic:after{ opacity: 1; }
-.our-team .pic img{
-    width: 100%;
-    height: auto;
-		/*height: 100%;*/
-		/*width:250px;
+		.our-team {
+			text-align: center;
+			margin-bottom: 100px;
+			z-index: 1;
+			position: relative;
+		}
+
+		.our-team .pic {
+			/* border-radius: 50%; */
+			overflow: hidden;
+			position: relative;
+		}
+
+		.our-team .pic:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			/* border-radius: 50%; */
+			background: rgba(0, 0, 0, 0.7);
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			/* transition: all 0.5s ease 0s; */
+		}
+
+		.our-team:hover .pic:after {
+			opacity: 1;
+		}
+
+		.our-team .pic img {
+			width: 100%;
+			height: fit-content;
+			/*height: 100%;*/
+			/*width:250px;
 		height:250px;*/
-}
-.our-team .social{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    opacity: 0;
-    position: absolute;
-    top: 45%;
-    left: 0;
-    z-index: 1;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .social{ opacity: 1; }
-.our-team .social li{ display: inline-block; }
-.our-team .social li a{
-    display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    font-size: 15px;
-    color: #fff;
-    margin-right: 10px;
-    transition: all 0.5s ease 0s;
-}
-.our-team .social li a:hover{
-    background: #fff;
-    color: #000;
-}
-.our-team .team-content{
-    width: 100%;
-    height: 100%;
-    /* border-radius: 50%; */
-    /* border: 2px dotted #ddd; */
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    z-index: -1;
-    /* transition: all 0.5s ease 0s; */
-}
-.our-team:hover .team-content{ border: 2px dotted #00adae; }
-.our-team .team-info{
-    width: 100%;
-    color: #464646;
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-}
-.our-team .title{
-    font-size: 20px;
-    font-weight: 600;
-    color: #464646;
-    margin: 0 0 5px 0;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .title{ color: #00adae; }
-.our-team .post{
-    display: block;
-    font-size: 14px;
-    color: #464646;
-}
+		}
+
+		@media screen and (max-width: 764px) {
+			.our-team .pic {
+				display: flex;
+				justify-content: center;
+			}
+
+			.our-team .pic img {
+				width: fit-content;
+				height: 60vh;
+			}
+		}
+
+		.our-team .social {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			opacity: 0;
+			position: absolute;
+			top: 45%;
+			left: 0;
+			z-index: 1;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team:hover .social {
+			opacity: 1;
+		}
+
+		.our-team .social li {
+			display: inline-block;
+		}
+
+		.our-team .social li a {
+			display: block;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			font-size: 15px;
+			color: #fff;
+			margin-right: 10px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team .social li a:hover {
+			background: #fff;
+			color: #000;
+		}
+
+		.our-team .team-content {
+			width: 100%;
+			height: 100%;
+			/* border-radius: 50%; */
+			/* border: 2px dotted #ddd; */
+			position: absolute;
+			bottom: -100px;
+			left: 0;
+			z-index: -1;
+			/* transition: all 0.5s ease 0s; */
+		}
+
+		.our-team:hover .team-content {
+			border: 2px dotted #00adae;
+		}
+
+		.our-team .team-info {
+			width: 100%;
+			color: #464646;
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+		}
+
+		.our-team .title {
+			font-size: 20px;
+			font-weight: 600;
+			color: #464646;
+			margin: 0 0 5px 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team:hover .title {
+			color: #00adae;
+		}
+
+		.our-team .post {
+			display: block;
+			font-size: 14px;
+			color: #464646;
+		}
 	</style>
 </head>
 
@@ -163,20 +200,20 @@
 
 				<!--  Main navigation  -->
 				<div class="nav-head">
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="./index.html#home">Home</a></li>
-					<li><a href="./index.html#about">About</a></li>
-					<li><a href="./coreTeam.html">Core Team</a></li>
-					<li><a href="./mate_rov.html">MTS-AUVZHCET</a></li>
-					<li><a href="./index.html#vehicles">Vehicles</a></li>
-					<li><a href="./index.html#service">Achievements</a></li>
-					<li><a href="./index.html#features">Sponsors</a></li>
-					<li><a href="./index.html#mentors">Mentors</a></li>
-					<li><a href="./posts.html">Recruitments</a></li>
-					<li><a href="./blog-single.html">Blog</a></li>
-					<li><a href="./index.html#contact">Contact</a></li>
-				</ul>
-			</div>
+					<ul class="main-nav nav navbar-nav navbar-right">
+						<li><a href="./index.html#home">Home</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						<li><a href="./coreTeam.html">Core Team</a></li>
+						<li><a href="./mate_rov.html">MTS-AUVZHCET</a></li>
+						<li><a href="./index.html#vehicles">Vehicles</a></li>
+						<li><a href="./index.html#service">Achievements</a></li>
+						<li><a href="./index.html#features">Sponsors</a></li>
+						<li><a href="./index.html#mentors">Mentors</a></li>
+						<li><a href="./posts.html">Recruitments</a></li>
+						<li><a href="./blog-single.html">Blog</a></li>
+						<li><a href="./index.html#contact">Contact</a></li>
+					</ul>
+				</div>
 				<!-- /Main navigation -->
 
 			</div>
@@ -190,135 +227,152 @@
 	<div class="container">
 		<div class="section-header text-center">
 			<div class="title">
-			 <h1 class="home-title"><span>Management Team</span></h1>
-		 </div>
+				<h1 class="home-title"><span>Management Team</span></h1>
+			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-			<div class="col-md-6">
-			<p class="about-des">If the technical teams are the mind of the club the management team is the heart.
+				<div class="col-md-6">
+					<p class="about-des">If the technical teams are the mind of the club the management team is the
+						heart.
 
-					Any organization, institution, forum or club cannot solely depend on the thinking minds for Its progress, there has to be someone to manage everything. Our tasks can often be as challenging and complex as the fabrication and designing of the AUV. For this we have the Management team, that ensures a hassle free working experience for the club.
+						Any organization, institution, forum or club cannot solely depend on the thinking minds for Its
+						progress, there has to be someone to manage everything. Our tasks can often be as challenging
+						and complex as the fabrication and designing of the AUV. For this we have the Management team,
+						that ensures a hassle free working experience for the club.
 
-					The team helps in organizing events, workshops, meeting etcs that promote our club activities. Here the social media content is created and updated for various platforms like Facebook, YouTube and Instagram. We're also responsible for the financing of the club by procuring funds and gathering sponsors. We manage and allocate the funds prudently. The management team is the interface of the club and the corporate world. It gives members a glimpse of what Its like and what it takes to handle one the most important task of getting funds for the club.</p>
-			</div>
-
-
-      <div class="col-md-6">
-			<!-- <div class="col-sm-12"> -->
-				<div id="my-slider" class="carousel slide" data-ride="carousel">
-
-				 <ol class="carousel-indicators">
-					 <li data-target="#my-slider" data-slide-to="0" class="active"></li>
-				 </ol>
-
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img class="slide-image" src="./img/mang2.jpg" alt="image1"/>
-						</div>
-					</div>
-					<a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
+						The team helps in organizing events, workshops, meeting etcs that promote our club activities.
+						Here the social media content is created and updated for various platforms like Facebook,
+						YouTube and Instagram. We're also responsible for the financing of the club by procuring funds
+						and gathering sponsors. We manage and allocate the funds prudently. The management team is the
+						interface of the club and the corporate world. It gives members a glimpse of what Its like and
+						what it takes to handle one the most important task of getting funds for the club.</p>
 				</div>
-			</div>
+
+
+				<div class="col-md-6">
+					<!-- <div class="col-sm-12"> -->
+					<div id="my-slider" class="carousel slide" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#my-slider" data-slide-to="0" class="active"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img class="slide-image" src="./img/mang2.jpg" alt="image1" />
+							</div>
+						</div>
+						<a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<br>
 
 		<div class="section-header text-center">
 			<div class="title">
-			 <h1 class="home-title"><span>Team Members</span></h1>
-		 </div>
+				<h1 class="home-title"><span>Team Members</span></h1>
+			</div>
 		</div>
 		<div class="jumbotron">
-    <div class="row">
+			<div class="row">
 				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/salma.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/salma.jpg">
+							<ul class="social">
+								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="mailto:salmaz.shamsi123@gmail.com ?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/salma-zehra-ahsan-shamsi-425a4916a/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Salma Zehra</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+								<li><a href="mailto:salmaz.shamsi123@gmail.com ?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/salma-zehra-ahsan-shamsi-425a4916a/"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Salma Zehra</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/aditi-jaiswal.jpg">
-                    <ul class="social">
-                        <!-- <li><a href="#" class="fa fa-facebook"></a></li>
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/aditi-jaiswal.jpg">
+							<ul class="social">
+								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-twitter"></a></li> -->
-                        <li><a href="mailto:aditijaiswal14600@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-                        <li><a href="https://www.linkedin.com/in/aditi-jaiswal-4560a0172" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Aditi Jaiswal</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/ayan.jpg">
-                    <ul class="social">
-                        <!-- <li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="mailto:aditijaiswal14600@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/aditi-jaiswal-4560a0172"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Aditi Jaiswal</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/ayan.jpg">
+							<ul class="social">
+								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-twitter"></a></li> -->
-                        <li><a href="mailto:arkhan7810@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-                        <li><a href="https://www.linkedin.com/in/ayan-ur-rehman-khan-64a670132/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Ayan Khan</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/sabeela-fatima.jpeg">
-                    <ul class="social">
-                        <!-- <li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="mailto:arkhan7810@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/ayan-ur-rehman-khan-64a670132/"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Ayan Khan</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/sabeela-fatima.jpeg">
+							<ul class="social">
+								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-twitter"></a></li> -->
-                        <li><a href="mailto:fatimasabeela@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-                        <li><a href="https://www.linkedin.com/in/sabeela-fatima-2814111b7" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Sabeela Fatima</h3>
-                        <span class="post">Team Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+								<li><a href="mailto:fatimasabeela@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/sabeela-fatima-2814111b7"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Sabeela Fatima</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
-    </div>
+			</div>
+		</div>
 	</div>
-</div>
 
 
 
@@ -353,8 +407,10 @@
 						<li><a href="https://www.facebook.com/auvzhcetclub/"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="https://twitter.com/auv_zhcet"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.instagram.com/auv_zhcet/"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/company/auv-zhcet/"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCKnOMeEqaWUOpE7iYwUnzDg"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/auv-zhcet/"><i class="fa fa-linkedin"></i></a>
+						</li>
+						<li><a href="https://www.youtube.com/channel/UCKnOMeEqaWUOpE7iYwUnzDg"><i
+									class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 
@@ -363,7 +419,9 @@
 			</div>
 			<!-- /Row -->
 
-			<div id="credits" style="margin-bottom: -50px"><a style="position: absolute; bottom: 0; right: 0; color: #fff; font-family: sans-serif; opacity: 0.4; font-size: 18px; padding: 0px 100px;" href=""></a></div>
+			<div id="credits" style="margin-bottom: -50px"><a
+					style="position: absolute; bottom: 0; right: 0; color: #fff; font-family: sans-serif; opacity: 0.4; font-size: 18px; padding: 0px 100px;"
+					href=""></a></div>
 
 		</div>
 		<!-- /Container -->

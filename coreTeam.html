@@ -2,417 +2,471 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<link rel="shortcut icon" href="img/logo.jpg" type="image/png"/>
-	<title>Core Team</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/png" />
+    <title>Core Team</title>
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 
-	<!-- Magnific Popup -->
-	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
 
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<style>
-	.our-team{
-    text-align: center;
-    margin-bottom: 100px;
-    z-index: 1;
-    position: relative;
-}
-.our-team .pic{
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-}
-.our-team .pic:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.7);
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .pic:after{ opacity: 1; }
-.our-team .pic img{
-    width: 100%;
-    height: auto;
-		/*height: 100%;*/
-		/*width:250px;
+    <style>
+        .our-team {
+            text-align: center;
+            margin-bottom: 100px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .our-team .pic {
+            /* border-radius: 50%; */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .our-team .pic:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            /* border-radius: 50%; */
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .pic:after {
+            opacity: 1;
+        }
+
+        .our-team .pic img {
+            width: 100%;
+            height: fit-content;
+            /*height: 100%;*/
+            /*width:250px;
 		height:250px;*/
-}
-.our-team .social{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    opacity: 0;
-    position: absolute;
-    top: 45%;
-    left: 0;
-    z-index: 1;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .social{ opacity: 1; }
-.our-team .social li{ display: inline-block; }
-.our-team .social li a{
-    display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    font-size: 15px;
-    color: #fff;
-    margin-right: 10px;
-    transition: all 0.5s ease 0s;
-}
-.our-team .social li a:hover{
-    background: #fff;
-    color: #000;
-}
-.our-team .team-content{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px dotted #ddd;
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    z-index: -1;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .team-content{ border: 2px dotted #00adae; }
-.our-team .team-info{
-    width: 100%;
-    color: #464646;
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-}
-.our-team .title{
-    font-size: 20px;
-    font-weight: 600;
-    color: #464646;
-    margin: 0 0 5px 0;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .title{ color: #00adae; }
-.our-team .post{
-    display: block;
-    font-size: 14px;
-    color: #464646;
-}
-	</style>
+        }
+
+        @media screen and (max-width: 764px) {
+            .our-team .pic {
+                display: flex;
+                justify-content: center;
+            }
+
+            .our-team .pic img {
+                width: fit-content;
+                height: 60vh;
+            }
+        }
+
+        .our-team .social {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            opacity: 0;
+            position: absolute;
+            top: 45%;
+            left: 0;
+            z-index: 1;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .social {
+            opacity: 1;
+        }
+
+        .our-team .social li {
+            display: inline-block;
+        }
+
+        .our-team .social li a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            font-size: 15px;
+            color: #fff;
+            margin-right: 10px;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team .social li a:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .our-team .team-content {
+            width: 100%;
+            height: 100%;
+            /* border-radius: 50%; */
+            border: 2px dotted #ddd;
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            z-index: -1;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .team-content {
+            border: 2px dotted #00adae;
+        }
+
+        .our-team .team-info {
+            width: 100%;
+            color: #464646;
+            position: absolute;
+            bottom: 12px;
+            left: 0;
+        }
+
+        .our-team .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #464646;
+            margin: 0 0 5px 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .title {
+            color: #00adae;
+        }
+
+        .our-team .post {
+            display: block;
+            font-size: 14px;
+            color: #464646;
+        }
+    </style>
 </head>
 
 <body>
 
-	<!--Redirect news-->
-	<a href="#" id="demo" style="display: none"></a>
-	<!--/Redirect news-->
+    <!--Redirect news-->
+    <a href="#" id="demo" style="display: none"></a>
+    <!--/Redirect news-->
 
-	<!-- Header -->
-	<header>
+    <!-- Header -->
+    <header>
 
-		<!-- Nav -->
-		<nav id="nav" class="navbar head">
-			<div class="container">
+        <!-- Nav -->
+        <nav id="nav" class="navbar head">
+            <div class="container">
 
-				<div class="navbar-header">
-					<!-- Logo -->
-					<div class="navbar-brand">
-						<a href="index.html">
-							<img class="logo" src="img/auv1.png" alt="logo" id="rotate_image">
-						</a>
-					</div>
-					<!-- /Logo -->
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img class="logo" src="img/auv1.png" alt="logo" id="rotate_image">
+                        </a>
+                    </div>
+                    <!-- /Logo -->
 
-					<!-- Collapse nav button -->
-					<div class="nav-collapse">
-						<span></span>
-					</div>
-					<!-- /Collapse nav button -->
-				</div>
+                    <!-- Collapse nav button -->
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <!-- /Collapse nav button -->
+                </div>
 
-				<!--  Main navigation  -->
-				<div class="nav-head">
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="./index.html#home">Home</a></li>
-					<li><a href="./index.html#about">About</a></li>
-					<li><a href="./coreTeam.html">Core Team</a></li>
-					<li><a href="./mate_rov.html">MTS-AUVZHCET</a></li>
-					<li><a href="./index.html#vehicles">Vehicles</a></li>
-					<li><a href="./index.html#service">Achievements</a></li>
-					<li><a href="./index.html#features">Sponsors</a></li>
-					<li><a href="./index.html#mentors">Mentors</a></li>
-					<li><a href="./posts.html">Recruitments</a></li>
-					<li><a href="./blog-single.html">Blog</a></li>
-					<li><a href="./index.html#contact">Contact</a></li>
-				</ul>
-			</div>
-				<!-- /Main navigation -->
+                <!--  Main navigation  -->
+                <div class="nav-head">
+                    <ul class="main-nav nav navbar-nav navbar-right">
+                        <li><a href="./index.html#home">Home</a></li>
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./coreTeam.html">Core Team</a></li>
+                        <li><a href="./mate_rov.html">MTS-AUVZHCET</a></li>
+                        <li><a href="./index.html#vehicles">Vehicles</a></li>
+                        <li><a href="./index.html#service">Achievements</a></li>
+                        <li><a href="./index.html#features">Sponsors</a></li>
+                        <li><a href="./index.html#mentors">Mentors</a></li>
+                        <li><a href="./posts.html">Recruitments</a></li>
+                        <li><a href="./blog-single.html">Blog</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /Main navigation -->
 
-			</div>
-		</nav>
-		<!-- /Nav -->
+            </div>
+        </nav>
+        <!-- /Nav -->
 
-	</header>
-	<!-- /Header -->
+    </header>
+    <!-- /Header -->
 
 
-	<div class="container">
-		<div class="section-header text-center">
-			<div class="title">
-			 <h1 class="home-title"><span>The Core Team</span></h1>
-		 </div>
-		</div>
-		<div class="container">
-			<!-- <p class="about-des">The Core Team is responsible for all the handling of club.
+    <div class="container">
+        <div class="section-header text-center">
+            <div class="title">
+                <h1 class="home-title"><span>The Core Team</span></h1>
+            </div>
+        </div>
+        <div class="container">
+            <!-- <p class="about-des">The Core Team is responsible for all the handling of club.
 			</p> -->
-		</div>
-		<div class="jumbotron">
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/Shubham Singh.JPG" width="42" height="42">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+        </div>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/Shubham Singh.JPG" width="42" height="42">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li>-->
-											<li><a href="mailto:shubhamsingh2454@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/shubhamsingh2454/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Shubham Singh</h3>
-                        <span class="post">MTS Chairperson</span>
+                                <li><a href="mailto:shubhamsingh2454@gmail.com?Subject=Hello%20again" target="_top"
+                                        class="fa fa-google-plus"></a></li>
+                                <li><a href="https://www.linkedin.com/in/shubhamsingh2454/" class="fa fa-linkedin"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Shubham Singh</h3>
+                                <span class="post">MTS Chairperson</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/faraz-omar.png">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/faraz-omar.png">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="mailto:farazomar.official@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/faraz-omar-a7a27517b/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Faraz Omar</h3>
-                        <span class="post">MTS Vice-Chairperson</span>
+                                <li><a href="mailto:farazomar.official@gmail.com?Subject=Hello%20again" target="_top"
+                                        class="fa fa-google-plus"></a></li>
+                                <li><a href="https://www.linkedin.com/in/faraz-omar-a7a27517b/"
+                                        class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Faraz Omar</h3>
+                                <span class="post">MTS Vice-Chairperson</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/prajjwal-nijhara.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/prajjwal-nijhara.jpg">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="mailto:prajjwalnijhara@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/nijharaprajjwal/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Prajjwal Nijhara</h3>
-                        <span class="post">MTS Secretary</span>
+                                <li><a href="mailto:prajjwalnijhara@gmail.com?Subject=Hello%20again" target="_top"
+                                        class="fa fa-google-plus"></a></li>
+                                <li><a href="https://www.linkedin.com/in/nijharaprajjwal/" class="fa fa-linkedin"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Prajjwal Nijhara</h3>
+                                <span class="post">MTS Secretary</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/hashir-sohrab.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/hashir-sohrab.jpg">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="hashirk@gmail.com" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/hashir-sohrab-3ba65117a/" class="fa fa-linkedin"></a></li> -->
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Hashir Sohrab</h3>
-                        <span class="post">MTS Teasurer</span>
+                                <li><a href="hashirk@gmail.com" class="fa fa-google-plus"></a></li>
+                                <li><a href="https://www.linkedin.com/in/hashir-sohrab-3ba65117a/"
+                                        class="fa fa-linkedin"></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Hashir Sohrab</h3>
+                                <span class="post">MTS Teasurer</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/hozaifa.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/hozaifa.jpg">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="mailto:mhozaifakhan98@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
-											<li><a href="https://www.linkedin.com/in/mohd-hozaifa-khan-361b7814a/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Mohd Hozaifa Khan</h3>
-                        <span class="post">Computer Team Head</span>
+                                <li><a href="mailto:mhozaifakhan98@gmail.com?Subject=Hello%20again" target="_top"
+                                        class="fa fa-google-plus"></a></li>
+                                <li><a href="https://www.linkedin.com/in/mohd-hozaifa-khan-361b7814a/"
+                                        class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Mohd Hozaifa Khan</h3>
+                                <span class="post">Computer Team Head</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/areeb-akhtar.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/areeb-akhtar.jpg">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="https://www.linkedin.com/in/mohammad-areeb-akhter-0a0984178/" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Mohd Areeb Akhter</h3>
-                        <span class="post">Electronics Team Head</span>
+                                <li><a href="https://www.linkedin.com/in/mohammad-areeb-akhter-0a0984178/"
+                                        class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Mohd Areeb Akhter</h3>
+                                <span class="post">Electronics Team Head</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-		</div>
-		<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/salma.jpg">
-                    <ul class="social">
-											<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/salma.jpg">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
-											<li><a href="https://www.linkedin.com/in/salma-zehra-ahsan-shamsi-425a4916a" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Salma Zehra Ahsan Shamsi</h3>
-                        <span class="post">Management Team Head</span>
+                                <li><a href="https://www.linkedin.com/in/salma-zehra-ahsan-shamsi-425a4916a"
+                                        class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Salma Zehra Ahsan Shamsi</h3>
+                                <span class="post">Management Team Head</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-				<div class="col-md-3 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/hashir-sohrab.jpg">
-                    <ul class="social">
-                        <!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <div class="col-md-3 col-sm-6" style="margin: 20px 0">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="./img/hashir-sohrab.jpg">
+                            <ul class="social">
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-twitter"></a></li> -->
-                        <li><a href="mailto:hashirk@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li> 
-                        <li><a href="https://www.linkedin.com/in/hashir-sohrab-3ba65117a" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="team-content">
-                    <div class="team-info">
-                        <h3 class="title">Hashir Sohrab</h3>
-                        <span class="post">Mechanical Team Head</span>
+                                <li><a href="mailto:hashirk@gmail.com?Subject=Hello%20again" target="_top"
+                                        class="fa fa-google-plus"></a></li>
+                                <li><a href="https://www.linkedin.com/in/hashir-sohrab-3ba65117a"
+                                        class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3 class="title">Hashir Sohrab</h3>
+                                <span class="post">Mechanical Team Head</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
-
-
-
     </div>
-	</div>
-</div>
 
 
 
 
-	<!-- Footer -->
-	<footer id="footer" class="sm-padding bg-dark">
+    <!-- Footer -->
+    <footer id="footer" class="sm-padding bg-dark">
 
-		<!-- Container -->
-		<div class="container">
+        <!-- Container -->
+        <div class="container">
 
-			<!-- Row -->
-			<div class="row">
+            <!-- Row -->
+            <div class="row">
 
-				<div class="col-md-12">
+                <div class="col-md-12">
 
-					<!-- footer logo -->
-					<div class="footer-logo">
-						<a href="index.html"><img src="img/auv1.png" alt="logo"></a>
-					</div>
-					<!-- /footer logo -->
+                    <!-- footer logo -->
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="img/auv1.png" alt="logo"></a>
+                    </div>
+                    <!-- /footer logo -->
 
-					<div id="footer-name" class="row">
-						<h2>AUV ZHCET</h2>
-						<hr>
-						<h4>Department of Mechanical Engineering, ZHCET</h4>
-						<h4>Aligarh Muslim University, Aligarh, U.P.</h4>
-						<h4>India</h4>
-					</div>
+                    <div id="footer-name" class="row">
+                        <h2>AUV ZHCET</h2>
+                        <hr>
+                        <h4>Department of Mechanical Engineering, ZHCET</h4>
+                        <h4>Aligarh Muslim University, Aligarh, U.P.</h4>
+                        <h4>India</h4>
+                    </div>
 
-					<!-- footer follow -->
-					<ul class="footer-follow">
-						<li><a href="https://www.facebook.com/auvzhcetclub/"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/auv_zhcet"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.instagram.com/auv_zhcet/"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/company/auv-zhcet/"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCKnOMeEqaWUOpE7iYwUnzDg"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-					<!-- /footer follow -->
+                    <!-- footer follow -->
+                    <ul class="footer-follow">
+                        <li><a href="https://www.facebook.com/auvzhcetclub/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/auv_zhcet"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/auv_zhcet/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/auv-zhcet/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/channel/UCKnOMeEqaWUOpE7iYwUnzDg"><i
+                                    class="fa fa-youtube"></i></a></li>
+                    </ul>
+                    <!-- /footer follow -->
 
-				</div>
+                </div>
 
-			</div>
-			<!-- /Row -->
+            </div>
+            <!-- /Row -->
 
-			<div id="credits" style="margin-bottom: -50px"><a style="position: absolute; bottom: 0; right: 0; color: #fff; font-family: sans-serif; opacity: 0.4; font-size: 18px; padding: 0px 100px;" href=""></a></div>
+            <div id="credits" style="margin-bottom: -50px"><a
+                    style="position: absolute; bottom: 0; right: 0; color: #fff; font-family: sans-serif; opacity: 0.4; font-size: 18px; padding: 0px 100px;"
+                    href=""></a></div>
 
-		</div>
-		<!-- /Container -->
+        </div>
+        <!-- /Container -->
 
-	</footer>
-	<!-- /Footer -->
+    </footer>
+    <!-- /Footer -->
 
-	<!-- Back to top -->
-	<div id="back-to-top"></div>
-	<!-- /Back to top -->
+    <!-- Back to top -->
+    <div id="back-to-top"></div>
+    <!-- /Back to top -->
 
-	<!-- Preloader >
+    <!-- Preloader >
 	<div id="preloader">
 		<div class="preloader">
 			<span></span>
@@ -423,13 +477,13 @@
 	</div>
 	<! /Preloader -->
 
-	<!-- jQuery Plugins -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/blog.js"></script>
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>
 
 </body>
 
