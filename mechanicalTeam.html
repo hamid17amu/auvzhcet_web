@@ -38,7 +38,7 @@
   <style>
     .our-team {
       text-align: center;
-      margin-bottom: 100px;
+      margin-bottom: 120px;
       z-index: 1;
       position: relative;
     }
@@ -68,20 +68,23 @@
 
     .our-team .pic img {
       width: 100%;
-      height: fit-content;
-      /*height: 100%;*/
+      /* height: fit-content; */
+      height: 100%;
       /*width:250px;
 		height:250px;*/
     }
 
-    @media screen and (max-width: 764px) {
-      .our-team .pic {
-        display: flex;
-        justify-content: center;
-      }
+    .our-team .pic .cover-img {
+      background-position: center;
+      height: 45vh;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-      .our-team .pic img {
-        width: fit-content;
+    }
+
+    @media screen and (max-width: 767px) {
+      .our-team .pic .cover-img {
+        background-size: contain;
         height: 60vh;
       }
     }
@@ -299,8 +302,9 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
+              <div class="cover-img" style="background-image: url('./img/team members/hashir-sohrab.jpg');"></div>
               <!-- <img src="./img/hashir-sohrab.jpg" /> -->
-              <img src="./img/team members/hashir-sohrab.jpg" />
+              <!-- <img src="./img/team members/hashir-sohrab.jpg" /> -->
               <ul class="social">
                 <!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
@@ -323,7 +327,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/faraz-omar.png" />
+              <div class="cover-img" style="background-image: url('./img/faraz-omar.png');"></div>
+              <!-- <img src="./img/faraz-omar.png" /> -->
               <ul class="social">
                 <li>
                   <a href="mailto:farazomar.official@gmail.com?Subject=Hello%20again" target="_top"
@@ -343,7 +348,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/shubham-singh.JPG" />
+              <div class="cover-img" style="background-image: url('./img/shubham-singh.JPG');"></div>
+              <!-- <img src="./img/shubham-singh.JPG" /> -->
               <ul class="social">
                 <li>
                   <a href="mailto:shubhamsingh2454@gmail.com?Subject=Hello%20again" target="_top"
@@ -365,8 +371,9 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
+              <div class="cover-img" style="background-image: url('./img/team members/mohammad-saad.jpg');"></div>
               <!-- <img src="./img/md-saad.jpg" /> -->
-              <img src="./img/team members/mohammad-saad.jpg" />
+              <!-- <img src="./img/team members/mohammad-saad.jpg" /> -->
               <ul class="social">
                 <li>
                   <a href="mailto:mohdsaad736@gmail.com?Subject=Hello%20again" target="_top"
@@ -389,7 +396,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/team members/shahab-ahmad-khan.jpg">
+              <div class="cover-img" style="background-image: url('./img/team members/shahab-ahmad-khan.jpg');"></div>
+              <!-- <img src="./img/team members/shahab-ahmad-khan.jpg"> -->
               <ul class="social">
                 <li><a href="mailto:shahabahmadkhan555@gmail.com?Subject=Hello%20again" target="_top"
                     class="fa fa-google-plus"></a></li>
@@ -407,7 +415,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/team members/apoorva-pachauri.jpg">
+              <div class="cover-img" style="background-image: url('./img/team members/apoorva-pachauri.jpg');"></div>
+              <!-- <img src="./img/team members/apoorva-pachauri.jpg"> -->
               <ul class="social">
                 <li><a href="mailto:ap20192023@gmail.com?Subject=Hello%20again" target="_top"
                     class="fa fa-google-plus"></a></li>
@@ -425,7 +434,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/team members/raj-kumar.jpg">
+              <div class="cover-img" style="background-image: url('./img/team members/raj-kumar.jpg');"></div>
+              <!-- <img src="./img/team members/raj-kumar.jpg"> -->
               <ul class="social">
                 <li><a href="mailto:Rajjadaun0063@gmail.com?Subject=Hello%20again" target="_top"
                     class="fa fa-google-plus"></a></li>
@@ -443,7 +453,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/team members/lalit-baghel.jpg">
+              <div class="cover-img" style="background-image: url('./img/team members/lalit-baghel.jpg');"></div>
+              <!-- <img src="./img/team members/lalit-baghel.jpg"> -->
               <ul class="social">
                 <li><a href="mailto:lalit7321@gmail.com?Subject=Hello%20again" target="_top"
                     class="fa fa-google-plus"></a></li>
@@ -461,7 +472,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="our-team">
             <div class="pic">
-              <img src="./img/team members/md-saad-khan.jpg">
+              <div class="cover-img" style="background-image: url('./img/team members/md-saad-khan.jpg');"></div>
+              <!-- <img src="./img/team members/md-saad-khan.jpg"> -->
               <ul class="social">
                 <li><a href="mailto:khansaadvoda@gmail.com?Subject=Hello%20again" target="_top"
                     class="fa fa-google-plus"></a></li>

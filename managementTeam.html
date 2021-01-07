@@ -38,7 +38,7 @@
 	<style>
 		.our-team {
 			text-align: center;
-			margin-bottom: 100px;
+			margin-bottom: 120px;
 			z-index: 1;
 			position: relative;
 		}
@@ -68,20 +68,23 @@
 
 		.our-team .pic img {
 			width: 100%;
-			height: fit-content;
-			/*height: 100%;*/
+			/* height: fit-content; */
+			height: 100%;
 			/*width:250px;
 		height:250px;*/
 		}
 
-		@media screen and (max-width: 764px) {
-			.our-team .pic {
-				display: flex;
-				justify-content: center;
-			}
+		.our-team .pic .cover-img {
+			background-position: center;
+			height: 45vh;
+			background-repeat: no-repeat;
+			background-size: cover;
 
-			.our-team .pic img {
-				width: fit-content;
+		}
+
+		@media screen and (max-width: 767px) {
+			.our-team .pic .cover-img {
+				background-size: contain;
 				height: 60vh;
 			}
 		}
@@ -150,6 +153,7 @@
 		}
 
 		.our-team .title {
+			line-height: 0.9;
 			font-size: 20px;
 			font-weight: 600;
 			color: #464646;
@@ -287,8 +291,11 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
+
+							<div class="cover-img"
+								style="background-image: url('./img/team members/salma-zehra-ahsan-shamsi.jpg')"></div>
 							<!-- <img src="./img/salma.jpg"> -->
-							<img src="./img/team members/salma-zehra-ahsan-shamsi.jpg">
+							<!-- <img src="./img/team members/salma-zehra-ahsan-shamsi.jpg"> -->
 							<ul class="social">
 								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
 											<li><a href="#" class="fa fa-twitter"></a></li> -->
@@ -309,8 +316,11 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
+							<div class="cover-img"
+								style="background-image: url('./img/team members/aditi-jaiswal.jpg');"></div>
 							<!-- <img src="./img/aditi-jaiswal.jpg"> -->
-							<img src="./img/team members/aditi-jaiswal.jpg">
+							<!-- <img src="./img/team members/aditi-jaiswal.jpg"> -->
+
 							<ul class="social">
 								<li><a href="mailto:aditijaiswal14600@gmail.com?Subject=Hello%20again" target="_top"
 										class="fa fa-google-plus"></a></li>
@@ -329,8 +339,10 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
+							<div class="cover-img"
+								style="background-image: url('./img/team members/ayan-ur-rehman-khan.jpg');"></div>
 							<!-- <img src="./img/ayan.jpg"> -->
-							<img src="./img/team members/ayan-ur-rehman-khan.jpg">
+							<!-- <img src="./img/team members/ayan-ur-rehman-khan.jpg"> -->
 							<ul class="social">
 								<li><a href="mailto:arkhan7810@gmail.com?Subject=Hello%20again" target="_top"
 										class="fa fa-google-plus"></a></li>
@@ -349,8 +361,10 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
+							<div class="cover-img"
+								style="background-image: url('./img/team members/sabeela-fatima.jpeg');"></div>
 							<!-- <img src="./img/sabeela-fatima.jpeg"> -->
-							<img src="./img/team members/sabeela-fatima.jpeg">
+							<!-- <img src="./img/team members/sabeela-fatima.jpeg"> -->
 							<ul class="social">
 								<li><a href="mailto:fatimasabeela@gmail.com?Subject=Hello%20again" target="_top"
 										class="fa fa-google-plus"></a></li>
@@ -369,7 +383,9 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
-							<img src="./img/team members/saman-nadeem.jpg">
+							<div class="cover-img"
+								style="background-image: url('./img/team members/saman-nadeem.jpg');"></div>
+							<!-- <img src="./img/team members/saman-nadeem.jpg"> -->
 							<ul class="social">
 								<li><a href="mailto:samannabeeha2004@gmail.com?Subject=Hello%20again" target="_top"
 										class="fa fa-google-plus"></a></li>
@@ -388,7 +404,9 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
-							<img src="./img/team members/suha-abad.jpg">
+							<div class="cover-img" style="background-image: url('./img/team members/suha-abad.jpg');">
+							</div>
+							<!-- <img src="./img/team members/suha-abad.jpg"> -->
 							<ul class="social">
 								<li><a href="mailto:khansuha2000@gmail.com?Subject=Hello%20again" target="_top"
 										class="fa fa-google-plus"></a></li>
