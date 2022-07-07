@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<link rel="shortcut icon" href="img/logo.jpg" type="image/png" />
+	<title>Crowd Funding SAUVC'2022</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<style>
+		.our-team {
+			text-align: center;
+			margin-bottom: 120px;
+			z-index: 1;
+			position: relative;
+		}
+
+		.our-team .pic {
+			/* border-radius: 50%; */
+			margin-top: 10px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.our-team .pic:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			/* border-radius: 50%; */
+			background: rgba(0, 0, 0, 0.7);
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team:hover .pic:after {
+			opacity: 1;
+		}
+
+		.our-team .pic img {
+			width: 100%;
+			/* height: fit-content; */
+			height: 100%;
+			/*width:250px;
+		height:250px;*/
+		}
+
+		.our-team .pic .cover-img {
+			background-position: center;
+			height: 45vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+
+		@media screen and (max-width: 767px) {
+			.our-team .pic .cover-img {
+				background-size: contain;
+				height: 60vh;
+			}
+		}
+
+		.our-team .social {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			opacity: 0;
+			position: absolute;
+			top: 45%;
+			left: 0;
+			z-index: 1;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team:hover .social {
+			opacity: 1;
+		}
+
+		.our-team .social li {
+			display: inline-block;
+		}
+
+		.our-team .social li a {
+			display: block;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			font-size: 15px;
+			color: #fff;
+			margin-right: 10px;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team .social li a:hover {
+			background: #fff;
+			color: #000;
+		}
+
+		.our-team .team-content {
+			width: 100%;
+			height: 100%;
+			/* border-radius: 50%; */
+			/* border: 2px dotted #ddd; */
+			position: absolute;
+			bottom: -100px;
+			left: 0;
+			z-index: -1;
+			/* transition: all 0.5s ease 0s; */
+		}
+
+		.our-team:hover .team-content {
+			border: 2px dotted #00adae;
+		}
+
+		.our-team .team-info {
+			width: 100%;
+			color: #464646;
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+		}
+
+		.our-team .title {
+			font-size: 20px;
+			font-weight: 600;
+			color: #464646;
+			margin: 0 0 5px 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.our-team:hover .title {
+			color: #00adae;
+		}
+
+		.our-team .post {
+			display: block;
+			font-size: 14px;
+			color: #464646;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--Redirect news-->
+	<a href="#" id="demo" style="display: none"></a>
+	<!--/Redirect news-->
+
+	<!-- Header -->
+	<header>
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar head">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/auv1.png" alt="logo" id="rotate_image">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<div class="nav-head">
+					<ul class="main-nav nav navbar-nav navbar-right">
+						<li><a href="./index.html#home">Home</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						<li><a href="./coreTeam.html">Core Team</a></li>
+						<li><a href="./crowd.html">Crowd Funding SAUVC'2022</a></li>
+						<li><a href="./mate_rov.html">MTS AUV-ZHCET</a></li>
+						<li><a href="./index.html#vehicles">Vehicles</a></li>
+						<li><a href="./index.html#service">Achievements</a></li>
+						<li><a href="./index.html#features">Sponsors</a></li>
+						<li><a href="./index.html#mentors">Mentors</a></li>
+						<!-- <li><a href="./posts.html">Recruitments</a></li> -->
+						<li><a href="./blog-single.html">Blog</a></li>
+						<li><a href="./index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+	</header>
+	<!-- /Header -->
+
+
+	<div class="container">
+		<div class="section-header text-center">
+			<div class="title">
+				<h1 class="home-title"><span>Crowd Funding SAUVC'2022</span></h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="about-des">We are MTS AUV-ZHCET, a student club specializing in underwater robotics. We make autonomous underwater vehicles from scratch going through various thought-out stages including designing and fabrication. We have participated in national and international competitions such as SAVe 2019, SAUVC 2018, ROVc, AMUROVc 2022, etc. <br><br>
+                    These are some of our achievements:<br>
+                    <ol>
+                    	<li>1st Position in AMUROVc 2022 a national-level competition held at Aligarh Muslim University<br> <a href="https://www.linkedin.com/posts/saleemanwarkhan_mts-mtsauvzhcet-amurovc-activity-6871470435066761216-doV6/">https://www.linkedin.com/posts/saleemanwarkhan_mts-mtsauvzhcet-amurovc-activity-6871470435066761216-doV6/</a></li>
+                    	<li>‘Most liked vehicle’ award in Singapore AUV Challenge 2018</li>
+                    	<li>Paper titled “Hybrid Autonomous Vehicle System for Flood Relief Operations” selected in AUV 2022 Singapore Technical Program.</li>
+                    	<li>A total of 4 patents have been published so far.</li>
+                    	<li>4th position in SAVe19 IIT-M Chennai</li>
+                    	<li>Selected among the 10 best innovation clubs in India at FINE 2018 organized in Rashtrapati Bhavan.</li>
+                    	<li>Top 3 at Idea presentation in Riyadh entrepreneurship summit 2018.</li>
+                    </ol>
+                    <br>
+
+We are participating in SAUVC for the second time, an international-level underwater robotics(AUV) challenge held in Singapore each year. We are proud to announce that after clearing the first round, we have been selected for further rounds of SAUVC which will be held in Singapore from 21st to 26th September 2022. We were the top 30% performers in the first round, competing with more than 120 teams internationally.<br><br>
+
+We have already been very innovative with our expenditures that go into the making of our AUV (Vehicle which will be competing) and a non-negotiable budget of 5 lacs has been finalized. We cannot, any further, compromise on the component quality involved in fabrication, designing, and building our AUV not to mention the travel and accommodation expenses for 11 people.<br>
+For this, we need your contributions to help us achieve our goals while representing our fraternity, Aligarh Muslim University on a global scale once again. Please contribute as much as you can to the following Milaap link, even a small amount and help from your side can mean a lot to us.<br><br>
+
+Contribute to our Milaap Link: <a href="https://milaap.org/fundraisers/support-for-the-students/deeplink?deeplink_type=paytm">https://milaap.org/fundraisers/support-for-the-students/deeplink?deeplink_type=paytm</a><br>
+
+For an alternate payment method, we have our official bank account identified by the university (AMU)<br><br>
+
+Account No. 5247101005809<br>
+IFSC Code. CNRB0005247<br>
+MICR Code. 202015013<br>
+Account Name. AUV ZHCET CLUB<br>
+Canara Bank AMU, Aligarh.<br> <br>
+
+Our deadline for the crowdfunding is 16th July 2022 <br><br>
+
+Regards <br>
+MTS AUV-ZCHET<br>
+Main Building, ZHCET<br>
+Zakir Hussain College of Engineering & Technology, AMU</p><br>
+				</div>
+
+
+				<div class="col-md-6">
+					<!-- <div class="col-sm-12"> -->
+					<div id="my-slider" class="carousel slide" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#my-slider" data-slide-to="0" class="active"></li>
+							<li data-target="#my-slider" data-slide-to="1"></li>
+							<li data-target="#my-slider" data-slide-to="2"></li>
+							<li data-target="#my-slider" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img class="slide-image" src="./img/comp3.jpg" alt="image1" />
+							</div>
+							<div class="item">
+								<img class="slide-image" src="./img/comp1.jpg" alt="image2" />
+							</div>
+							<div class="item">
+								<img class="slide-image" src="./img/comp4.jpg" alt="image1" />
+							</div>
+							<div class="item">
+								<img class="slide-image" src="./img/comp2.jpg" alt="image1" />
+							</div>
+						</div>
+						<a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<!--<div class="section-header text-center">
+			<div class="title">
+				<h1 class="home-title"><span>Team Members</span></h1>
+			</div>
+		</div>
+
+
+
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/ZahidHussain.jpeg" style="height: 285px; width: 250px;">
+							<!-- <img src="./img/hozaifa.jpg"> -->
+							<!-- <img src="./img/team members/mohd-hozaifa-khan.jpg"> -->
+							<!--<ul class="social">
+								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+							  <li><a href="#" class="fa fa-twitter"></a></li> -->
+								<!--<li><a href="mailto:zahidhussain909@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/zahidhussain909/"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">B Zahid Hussain</h3>
+								<span class="post">Team Head</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/IfrahAndleeb.jpg" style="height: 285px; width: 250px;">
+							<!-- <img src="./img/hozaifa.jpg"> -->
+							<!-- <img src="./img/team members/mohd-hozaifa-khan.jpg"> -->
+							<!--<ul class="social">
+								<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+							  <li><a href="#" class="fa fa-twitter"></a></li> -->
+								<!--<li><a href="#" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/ifrah-andleeb-25652a1b9/"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Ifrah Andleeb</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/yash-agarwal.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:yash.agarwal1214@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/yash-agarwal-5a2975192/"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Yash Agarwal</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- <div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/shubh-singhal.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:shubhsinghal02@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/shubh-singhal-4486b41a1/"
+										class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Shubh Singhal</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			
+				<!-- <div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/tausif-iqbal.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:tausifiqbal10@gmail.com?Subject=Hello%20again" target="_top"
+										class="fa fa-google-plus"></a></li>
+								<li><a href="" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Tausif Iqbal</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- <div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/KanakGautam.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:kanakgautam2106@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<li><a href="https://www.linkedin.com/in/kanak-gautam-66302a202/"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Kanak Gautam</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- <div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/AhamGupta.jpeg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:ahamgupta18113@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<li><a href="https://www.linkedin.com/in/aham-gupta-18a02a202/"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Aham Gupta</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/ShoryaAgarwal.jpeg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:shoryaagarwal7085@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+								<li><a href="https://www.linkedin.com/in/shorya-agarwal-7b1751218/"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Shorya Agarwal</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/YashPratap.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:yashpratap684@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<li><a href="https://www.linkedin.com/in/yash-pratap-singh-879181212/"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Yash Pratap Singh</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/DishaSingh.jpeg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:diishasiing@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<li><a href="https://www.linkedin.com/in/diishasiing10122002/"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Disha Singh</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/MadihaTahreem.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:madihatahreem487@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<li><a href="https://www.linkedin.com/in/madiha-t/"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Madiha Tahreem </h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/avantika.jpeg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:avantikadixit25@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<li><a href="https://www.linkedin.com/in/avantika-dixit-9666791b3"
+									class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Avantika Dixit </h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="./img/team members/MohammadHaadiAkhter.jpg" style="height: 285px; width: 250px;">
+							<ul class="social">
+								<li><a href="mailto:haadiakhter@gmail.com?Subject=Hello%20again" target="_top"
+									class="fa fa-google-plus"></a></li>
+							<!-- <li><a href=""
+									class="fa fa-linkedin"></a></li> 
+							</ul>
+						</div>
+						<br>
+						<div class="team-content">
+							<div class="team-info">
+								<h3 class="title">Mohammad Haadi Akhter</h3>
+								<span class="post">Team Member</span>
+							</div>
+						</div>
+					</div>
+				</div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- webDevTeam 
+
+	<div class="container">
+		<div class="section-header text-center">
+		  <div class="title">
+			<h1 class="home-title"><span>Web Development Team</span></h1>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <p class="about-des">
+				The Web Development Team is responsible for maintaining and updating the website of the club.
+			  </p>
+			</div>
+	 
+			<div class="col-md-6">
+			  <!-- <div class="col-sm-12"> 
+				  
+			  <div id="my-slider" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+				  <li data-target="#my-slider" data-slide-to="1"></li>
+				  <li data-target="#my-slider" data-slide-to="2"></li>
+				  <li data-target="#my-slider" data-slide-to="3"></li>
+				  <li data-target="#my-slider" data-slide-to="4"></li>
+				</ol>
+				
+	
+			   <div class="carousel-inner" role="listbox">
+				  <div class="item active">
+					<img class="slide-image" src="" alt="image1" />
+				  </div>
+				  <div class="item">
+					<img class="slide-image" src="" alt="image2" />
+				  </div>
+				  <div class="item">
+					<img class="slide-image" src="" alt="image1" />
+				  </div>
+				  <div class="item">
+					<img class="slide-image" src="" alt="image1" />
+				  </div>
+				  <div class="item">
+					<img class="slide-image" src="" alt="image1" />
+				  </div>
+				</div>
+				<a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<br />
+	
+		<div class="section-header text-center">
+		  <div class="title">
+			<h1 class="home-title"><span>Team Members</span></h1>
+		  </div>
+		</div>
+	
+		<div class="jumbotron">
+		  <div class="row">
+			<div class="col-md-3 col-sm-6">
+			  <div class="our-team">
+				<div class="pic">
+				  <div class="cover-img" style="background-image: url('img/avantika.jpeg');"></div>
+				  <!-- <img src="#" /> -->
+				  <!-- <img src="#" /> 
+				  <ul class="social">
+					<!-- <li><a href="#" class="fa fa-facebook"></a></li>
+												<li><a href="#" class="fa fa-twitter"></a></li> 
+					<li>
+					  <a href="mailto:avantikadixit25@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a>
+					</li>
+					<li>
+					  <a href="https://www.linkedin.com/in/avantika-dixit-9666791b3" class="fa fa-linkedin"></a>
+					</li>
+				  </ul>
+				</div>
+				<div class="team-content">
+				  <div class="team-info">
+					<h3 class="title">Avantika Dixit</h3>
+					<span class="post">Team Coordinator</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="col-md-3 col-sm-6">
+			  <div class="our-team">
+				<div class="pic">
+				  <div class="cover-img" style="background-image: url('img/team\ members/ShanurRahman.jpeg');"></div>
+				  <!-- <img src="./img/team members/shahab-ahmad-khan.jpg"> 
+				  <ul class="social">
+					<li><a href="mailto:shanurrahman02@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a></li>
+					<li><a href="http://linkedin.com/in/shanur-rahman-76591a220" class="fa fa-linkedin"></a></li>
+				  </ul>
+				</div>
+				<div class="team-content">
+				  <div class="team-info">
+					<h3 class="title">Shanur Rahman</h3>
+					<span class="post">Co-Coordinator</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="col-md-3 col-sm-6">
+			  <div class="our-team">
+				<div class="pic">
+				  <div class="cover-img" style="background-image: url('img/HamidHusain.jpg');"></div>
+				  <!-- <img src="./img/faraz-omar.png" /> 
+				  <ul class="social">
+					<li>
+					  <a href="mailto:hamid17amu@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google-plus"></a>
+					</li>
+					<li><a  href="https://www.linkedin.com/in/hamid17/" target="_top" class="fa fa-linkedin"></a></li>
+				  </ul>
+				</div>
+				<div class="team-content">
+				  <div class="team-info">
+					<h3 class="title">Hamid Husain</h3>
+					<span class="post">Team Member</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-sm-6">
+			  <div class="our-team">
+				<div class="pic">
+				  <div class="cover-img" style="background-image: url('img/team\ members/UzmaMasood.jpg');"></div>
+				  <!-- <img src="./img/md-saad.jpg" /> -->
+				  <!-- <img src="./img/team members/mohammad-saad.jpg" /> 
+				  <ul class="social">
+					<li>
+					  <a href="mailto:u.uzma1807@gmail.com?Subject=Hello%20again" target="_top"
+						class="fa fa-google-plus"></a>
+					</li>
+					<li>
+					  <a href="https://www.linkedin.com/in/uzma-m-346404239/" class="fa fa-linkedin"></a>
+					</li>
+				  </ul>
+				</div>
+				<div class="team-content">
+				  <div class="team-info">
+					<h3 class="title">Uzma Masood</h3>
+					<!-- <span class="post">Team Member</span> 
+					<span class="post">Team Member</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="col-md-3 col-sm-6">
+			  <div class="our-team">
+				<div class="pic">
+				  <div class="cover-img" style="background-image: url('img/sumir.jpeg');"></div>
+				  <!-- <img src="./img/team members/shahab-ahmad-khan.jpg"> 
+				  <ul class="social">
+					<li><a href="mailto:sumirvats003@gmail.com?Subject=Hello%20again" target="_top"
+						class="fa fa-google-plus"></a></li>
+					<li><a href="https://www.linkedin.com/in/sumir-vats-17053a228/" class="fa fa-linkedin"></a></li>
+				  </ul>
+				</div>
+				<div class="team-content">
+				  <div class="team-info">
+					<h3 class="title">Sumir Vats</h3>
+					<span class="post">Team Member</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	
+			
+		  </div>
+		</div>
+	  </div>
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/auv1.png" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<div id="footer-name" class="row">
+						<h2>AUV ZHCET</h2>
+						<hr>
+						<h4>Department of Mechanical Engineering, ZHCET</h4>
+						<h4>Aligarh Muslim University, Aligarh, U.P.</h4>
+						<h4>India</h4>
+					</div>
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="https://www.facebook.com/auvzhcetclub/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/auv_zhcet"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/auv_zhcet/"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/auv-zhcet/"><i class="fa fa-linkedin"></i></a>
+						</li>
+						<li><a href="https://www.youtube.com/channel/UCKnOMeEqaWUOpE7iYwUnzDg"><i
+									class="fa fa-youtube"></i></a></li>
+						<li><a href="https://github.com/auvzhcet"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+			<div id="credits" style="margin-bottom: -50px"><a
+					style="position: absolute; bottom: 0; right: 0; color: #fff; font-family: sans-serif; opacity: 0.4; font-size: 18px; padding: 0px 100px;"
+					href=""></a></div>
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader >
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<! /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/blog.js"></script>
+
+</body>
+
+</html>
