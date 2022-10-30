@@ -68,7 +68,9 @@ body {
 .nav-head,.white-btn,.main-btn{
             font-family: 'Varela Round', sans-serif;
 }
-
+#navbar-ul{
+    margin-left:120px;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
