@@ -1,0 +1,116 @@
+.rovc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* padding: 2px; */
+    
+}
+
+.rovc-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 480px ;
+    height: 320px ; */
+    /* border: 1px solid red; */
+    transform: scale(.8);
+    overflow: hidden;
+    border-radius: 22px;
+    margin-top: 20px;
+    transition: all .4s linear;
+    z-index: 2;
+    /* padding: 3px; */
+
+    
+}
+/* .rovc-img::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent, red);
+    animation: rotate 4s linear  infinite  ;
+    z-index: -1;
+}
+.rovc-img::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,green);
+    animation: rotate 4s linear  infinite  ;
+    animation-delay: 2s;
+    z-index: -1;
+}
+.rovc-img:hover::before,.rovc-img:hover::after{
+    background: transparent;
+} */
+.rovc-img:hover{
+    cursor: pointer;
+    /* transform: scale(1.01); */
+
+}
+.rovc-img >div{
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    z-index: 100;
+    overflow: hidden;
+    margin: 3px;
+
+}
+ /* ROVc Content  */
+.rovc-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10px;
+}
+.rovc-content h2 {
+    padding: 4px;
+    padding-bottom: 10px;
+}
+.rovc-content h2 a{
+    text-decoration: none;
+    color: #111;
+}
+.rovc-content h2 a{
+    text-decoration: none;
+    color: crimson;
+    /* animation: blink 2s linear infinite; */
+}
+.rovc-content span{
+    transition: all .4s linear;
+}
+.rovc-content span:hover{
+    transform: scale(1.05);
+}
+.rovc-content span a{
+    text-decoration: none;
+    color: #111;
+    padding: 10px 15px ;
+    text-transform: uppercase;
+    border: 2px solid #111;
+    transition: all .4s linear;
+}
+
+.rovc-content span a:hover{
+    cursor: pointer;
+    color: white;
+    background: #111;
+
+}
+
+ /* Rotation animation  */
+ /* @keyframes rotate {
+     0%{
+        transform: rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+ } */

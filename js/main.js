@@ -13,7 +13,7 @@
 	// 		$('.popup').css('display','block'); },5000);
 	// 	});
 
-	  //rotate lobo of AUVZHCET
+	  //rotate logo of AUVZHCET
 		$(window).scroll(function() {
 	    var theta = $(window).scrollTop() / 200 % Math.PI;
 	    $('#rotate_image').css({ transform: 'rotate(' + theta + 'rad)' });
@@ -253,5 +253,74 @@
 			}
 		}
 	});
+
+	//Teams Slider
+	$('#team1-slider').owlCarousel({
+		items:1,
+		loop:true,
+
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
+
+	$('#team1-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
+
+	$('#team2-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
+
+	$('#team3-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
+
+	$('#team4-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
+	$('#team5-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
+
+	
 
 })(jQuery);

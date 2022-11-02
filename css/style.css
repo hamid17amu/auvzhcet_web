@@ -68,9 +68,7 @@ body {
 .nav-head,.white-btn,.main-btn{
             font-family: 'Varela Round', sans-serif;
 }
-#navbar-ul{
-    margin-left:120px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -2064,4 +2062,64 @@ header {
 }
 
 
+
+/*------------------------------------*\
+	ROVc gallery CSS
+\*------------------------------------*/
+
+.gallery {
+    position: relative;
+    background-color: #F4F4F4;
+    padding: 40px 20px;
+    margin: 15px 0px;
+    transition: all .4s linear;
+}
+
+.gallery:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.gallery::after {
+    content: "";
+    background-color: #1C1D21;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0%;
+    z-index: 1;
+    -webkit-transition: 0.2s height;
+    transition: 0.2s height;
+}
+
+.gallery:hover:after {
+    height: 100%;
+}
+
+.gallery-img {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 11;
+}
+
+.gallery-img>img {
+  width: 100%;
+}
+
+.gallery .overlay {
+    background: #1C1D21;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.gallery:hover .overlay {
+    opacity: 0.8;
+}
 
